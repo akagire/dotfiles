@@ -96,12 +96,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# git
-alias gs="git status -s"
-alias gpl="git pull"
-
-# docker
-alias dc="docker-compose"
-alias de="docker exec -it"
- 
