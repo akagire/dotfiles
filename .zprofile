@@ -1,12 +1,11 @@
+export LANG=ja_JP.UTF-8
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.pyenv/shims:$PATH
 
-# for `Pure`s command syntax
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 eval "$(rbenv init -)"
-
 
 # Alias
 alias gs='git status --short --branch'
