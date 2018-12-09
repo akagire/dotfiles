@@ -97,9 +97,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gf="git fetch origin --prune"
-alias gs="git status"
-alias gl="git log --oneline"
-alias dc="docker-compose"
-alias be="bundle exec"
-
