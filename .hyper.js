@@ -9,10 +9,10 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 16,
+    fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: '"Ubuntu Mono derivative Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"monofur for Powerline", Cica, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -24,10 +24,10 @@ module.exports = {
     cursorColor: 'rgba(248,28,229,0.8)',
 
     // terminal text color under BLOCK cursor
-    cursorAccentColor: '#222',
+    cursorAccentColor: '#000',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-    cursorShape: 'UNDERLINE',
+    cursorShape: 'BLOCK',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
     cursorBlink: false,
@@ -61,23 +61,23 @@ module.exports = {
     showWindowControls: '',
 
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '0px 14px',
+    padding: '0',
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: '#222',
+      black: '#333333',
       red: '#C51E14',
       green: '#1DC121',
-      yellow: '#FF9900',
-      blue: '#188FEA',
+      yellow: '#C7C329',
+      blue: '#00aced',
       magenta: '#C839C5',
       cyan: '#20C5C6',
       white: '#C7C7C7',
       lightBlack: '#686868',
       lightRed: '#FD6F6B',
-      lightGreen: '#55C500',
+      lightGreen: '#67F86F',
       lightYellow: '#FFFA72',
       lightBlue: '#6A76FB',
       lightMagenta: '#FD7CFC',
@@ -131,7 +131,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: ["hyper-statusline"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
