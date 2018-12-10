@@ -29,3 +29,7 @@ set listchars=tab:>-,trail:-,nbsp:_
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+" key binding
+noremap ; :
+noremap : ;
