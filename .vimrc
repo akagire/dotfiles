@@ -33,3 +33,6 @@ set shiftwidth=2
 " key binding
 noremap ; :
 noremap : ;
+
+" backspace hack
+set backspace=indent,eol,start
