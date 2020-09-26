@@ -8,6 +8,10 @@ export PATH=$HOME/.pyenv/shims:$PATH
 eval "$(rbenv init -)"
 
 # Alias
+if [ "$(uname)" = 'Darwin' ]; then
+  alias ls='ls -G'
+fi
+
 alias gs='git status --short --branch'
 alias glog='git log --oneline'
 alias gf='git fetch origin --prune'
