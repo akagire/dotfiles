@@ -6,7 +6,8 @@ setopt auto_cd
 eval "$(nodenv init -)"
 
 ### zplug configure
-source ~/.zplug/init.zsh
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
 
 # zplug initialize
 zplug "plugins/git", from:oh-my-zsh
