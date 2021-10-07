@@ -4,7 +4,7 @@
 
 module.exports = {
   config: {
-    opacity: 1,
+    opacity: 0.8,
 
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
@@ -112,7 +112,7 @@ module.exports = {
     shellArgs: ['--login'],
 
     // for environment variables
-    env: {LANG: 'ja_JP.UTF-8'},
+    env: {},
 
     // set to `false` for no bell
     bell: false,
@@ -148,7 +148,8 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-statusline", "hyper-search", "hyper-opacity"],
+  // plugins: ["hyper-statusline", "hyper-search", "hyper-opacity"],
+  plugins: ["hyper-search"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
