@@ -1,13 +1,17 @@
 export LANG=ja_JP.UTF-8
 
+autoload -Uz compinit && compinit
+
 setopt auto_cd
+setopt auto_pushd
+setopt correct
+setopt list_packed
 
 # nodenv configure
 eval "$(nodenv init -)"
 
 ### zplug configure
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
+source ~/.zplug/init.zsh
 
 # zplug initialize
 zplug "plugins/git", from:oh-my-zsh
@@ -40,3 +44,15 @@ fi
 
 # Then, source plugins and add comment to $PATH
 zplug load
+
+# The next line updates PATH for the Google Cloud SDK. It's for mac only
+if [ -f '/Users/eguchi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/eguchi/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud. It's for mac only
+if [ -f '/Users/eguchi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/eguchi/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/sbin:$PATH"
+
+# for XXXX file service
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# export PIPENV_VENV_IN_PROJECT=true
