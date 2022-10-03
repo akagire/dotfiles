@@ -1,5 +1,5 @@
-eval "$(rbenv init -)"
-eval "$(pyenv init --path)"
+# eval "$(rbenv init -)"
+# eval "$(pyenv init --path)"
 
 # Alias
 if [ "$(uname)" = 'Darwin' ]; then
@@ -14,3 +14,6 @@ alias gbc="git branch --merged|egrep -v '\*|develop|master|main'|xargs git branc
 alias sed="gsed"
 
 alias dc="docker compose"
+
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
