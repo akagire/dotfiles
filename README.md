@@ -5,7 +5,7 @@ https://brew.sh/index_ja
 
 #### 2. Install dependencies
 ```sh
-brew install git gsed nodeenv vim
+brew install git gsed nodeenv vim jq peco
 brew install hyper --cask
 ```
 

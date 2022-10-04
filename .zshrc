@@ -34,7 +34,6 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "chrissicool/zsh-256color"
 
-
 if ! zplug check --verbose; then
 	printf "Install? [Y/n]: "
 	if read -q; then
