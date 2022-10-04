@@ -5,8 +5,8 @@ https://brew.sh/index_ja
 
 #### 2. Install dependencies
 ```sh
-brew install git gsed nodeenv vim jq peco
-brew install hyper --cask
+brew install git gsed nodenv vim jq peco
+brew install hyper alfred slack google-chrome visual-studio-code karabiner-elements --cask
 ```
 
 #### 3. Install `zplug`
@@ -35,4 +35,10 @@ cp /.* ./
 ```sh
 vim
 # :PlugInstall
+```
+
+#### 6. Configure git
+```sh
+git config --global user.name "Takuya Eguchi"
+git config --global user.email "seal2501@gmail.com"
 ```
