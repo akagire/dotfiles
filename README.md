@@ -6,7 +6,7 @@ https://brew.sh/index_ja
 #### 2. Install dependencies
 ```sh
 brew install git gsed nodenv vim jq peco
-brew install hyper alfred slack google-chrome visual-studio-code karabiner-elements figma --cask
+brew install hyper alfred slack google-chrome visual-studio-code karabiner-elements figma 1password --cask
 ```
 
 #### 3. Install `zplug`
