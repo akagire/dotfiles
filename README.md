@@ -44,4 +44,6 @@ vim
 ```sh
 git config --global user.name "Takuya Eguchi"
 git config --global user.email "seal2501@gmail.com"
+git config --global init.defaultbranch=main
+git config --global core.ignorecase false
 ```
