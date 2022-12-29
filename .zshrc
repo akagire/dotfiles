@@ -7,8 +7,9 @@ setopt auto_pushd
 setopt correct
 setopt list_packed
 
-# nodenv configure
-eval "$(nodenv init -)"
+# n configure
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
 
 ### zplug configure
 source ~/.zplug/init.zsh
