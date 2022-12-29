@@ -11,6 +11,9 @@ setopt list_packed
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
 
+# ctrl + w configure
+export WORDCHARS='*?_.[]~-=&;!#$%^(){}<>'
+
 ### zplug configure
 source ~/.zplug/init.zsh
 
