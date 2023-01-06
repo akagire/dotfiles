@@ -47,3 +47,27 @@ git config --global user.email "seal2501@gmail.com"
 git config --global init.defaultbranch=main
 git config --global core.ignorecase false
 ```
+
+#### 10. (Optional) Install Docker compose
+
+When I doing commercial development project, I have to use any other docker desktop like lima.
+
+So maybe I install docker from Homebrew, but it does not bundle docker compose, I need to install docker compose manually.
+
+https://github.com/docker/compose/tree/v2/#where-to-get-docker-compose
+
+> Docker Compose is included in Docker Desktop for Windows and macOS.
+
+No I can't :(
+
+```sh
+# Apple Silicon
+curl \
+-SL https://github.com/docker/compose/releases/latest/download/docker-compose-darwin-aarch64 \
+-o ~/.docker/cli-plugins/docker-compose
+
+chmod +x ~/.docker/cli-plugins/docker-compose
+
+docker compose version
+# => Docker Compose version v2.xx.x
+```
