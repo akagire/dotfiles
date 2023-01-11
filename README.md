@@ -44,8 +44,13 @@ vim
 ```sh
 git config --global user.name "Takuya Eguchi"
 git config --global user.email "seal2501@gmail.com"
-git config --global init.defaultbranch=main
+git config --global init.defaultbranch main
 git config --global core.ignorecase false
+git config --global core.autocrlf false
+git config --global core.editor vim
+git config --global color.ui true
+git config --global pull.ff only
+git config --global pull.rebase false
 ```
 
 #### 10. (Optional) Install Docker compose
