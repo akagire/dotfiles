@@ -76,3 +76,45 @@ chmod +x ~/.docker/cli-plugins/docker-compose
 docker compose version
 # => Docker Compose version v2.xx.x
 ```
+
+Finally, I tried to use `docker compose build` by factory reset docker but I got following error.
+
+```
+error getting credentials - err: docker-credential-osxkeychain resolves to executable in current directory (./docker-credential-osxkeychain), out: ``
+```
+
+I have not using Docker Desktop for Mac but default configuration applied using Mac key chain that was problem.
+
+So, I need fix `~/.docker/config.json` to blank json like `{}`, and login Docker Hub,
+
+```sh
+docker login
+# and enter username and password
+```
+
+And I can get raw Docker Hub credential like following to `~/.docker/config.json` .
+
+```json
+{
+	"auths": {
+		"https://index.docker.io/v1/": {
+			"auth": "xxxxxxxxxx"
+		}
+	}
+}
+```
+
+cf) https://github.com/docker/compose/issues/6517#issuecomment-471625374
+
+Also I got following warning when login to docker hub
+```
+WARNING! Your password will be stored unencrypted in /Users/takuya/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+```
+
+If I have concern this warning, I can use `docker-credential=helpers` .
+https://github.com/docker/docker-credential-helpers/releases
+
+
+Finally (really), I tried to `docker compose build` and it works.
