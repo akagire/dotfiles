@@ -2,6 +2,9 @@ export LANG=ja_JP.UTF-8
 
 autoload -Uz compinit && compinit
 
+# ignore upper/lower for complete
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
+
 setopt auto_cd
 setopt auto_pushd
 setopt correct
@@ -34,7 +37,7 @@ zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-history-substring-search"
 
 # code complrete
-zplug "zsh-users/zsh-autosuggestions"
+# zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "chrissicool/zsh-256color"
 
