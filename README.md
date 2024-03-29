@@ -12,20 +12,20 @@ brew install git gsed nodenv vim jq peco ffmpeg
 
 # cask
 brew install \
-	1password \
-	alfred \
-	alt-tab \
-	discord \
-	figma \
-	google-chrome \
-	hyper \
-	karabiner-elements \
-	keycastr \
-	ngrok \
-	slack \
-	tableplus \
-	visual-studio-code \
-	--cask
+  1password \
+  alfred \
+  alt-tab \
+  discord \
+  figma \
+  google-chrome \
+  hyper \
+  karabiner-elements \
+  keycastr \
+  ngrok \
+  slack \
+  tableplus \
+  visual-studio-code \
+  --cask
 ```
 
 #### 3. Install Powerline fonts (HackGen)
