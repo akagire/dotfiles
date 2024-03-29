@@ -7,8 +7,25 @@ https://brew.sh/index_ja
 #### 2. Install dependencies
 
 ```sh
-brew install git gsed nodenv vim jq peco
-brew install hyper alfred slack google-chrome visual-studio-code karabiner-elements figma 1password --cask
+# cli
+brew install git gsed nodenv vim jq peco ffmpeg
+
+# cask
+brew install \
+	1password \
+	alfred \
+	alt-tab \
+	discord \
+	figma \
+	google-chrome \
+	hyper \
+	karabiner-elements \
+	keycastr \
+	ngrok \
+	slack \
+	tableplus \
+	visual-studio-code \
+	--cask
 ```
 
 #### 3. Install Powerline fonts (HackGen)
