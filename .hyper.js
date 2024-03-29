@@ -14,7 +14,7 @@ module.exports = {
     fontSize: 14,
 
     // font family with optional fallbacks
-    fontFamily: '"Cousine for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"HackGen35 Console NF", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -148,7 +148,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-statusline", "hyper-opacity"],
+  plugins: ['hyper-statusline', 'hyper-opacity'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
