@@ -9,6 +9,14 @@ setopt auto_cd
 setopt auto_pushd
 setopt correct
 setopt list_packed
+setopt complete_in_word
+
+# zsh history configure
+export HISTFILE=${HOME}/.zsh_history
+export HISTSIZE=1000
+export SAVEHIST=100000
+setopt hist_ignore_dups
+setopt EXTENDED_HISTORY
 
 # n configure
 export N_PREFIX=$HOME/.n
@@ -37,9 +45,12 @@ zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-history-substring-search"
 
 # code complrete
-# zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "chrissicool/zsh-256color"
+
+# emoji-cli
+zplug "b4b4r07/emoji-cli"
 
 if ! zplug check --verbose; then
 	printf "Install? [Y/n]: "
