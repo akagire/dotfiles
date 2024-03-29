@@ -1,24 +1,30 @@
 ### Prepare
 
 #### 1. Install homebrew
+
 https://brew.sh/index_ja
 
 #### 2. Install dependencies
+
 ```sh
 brew install git gsed nodenv vim jq peco
 brew install hyper alfred slack google-chrome visual-studio-code karabiner-elements figma 1password --cask
 ```
 
-#### 3. Install Powerline fonts
-https://github.com/powerline/fonts
+#### 3. Install Powerline fonts (HackGen)
+
+https://github.com/yuru7/HackGen
 
 #### 4. Install `zplug`
+
 https://github.com/zplug/zplug
 
 #### 5. Install `vim-plug`
+
 https://github.com/junegunn/vim-plug
 
 #### 6. Install vim color theme `monokai`
+
 ```sh
 mkdir ~/.vim
 cd ~/.vim
@@ -29,18 +35,21 @@ vi ~/.vimrc
 ```
 
 #### 7. Deploy
+
 ```sh
 cp /.* ./
 # TODO: This command occurred `.git` directory copy
 ```
 
 #### 8. Install `vim-plug` for vim
+
 ```sh
 vim
 # :PlugInstall
 ```
 
 #### 9. Configure git
+
 ```sh
 git config --global user.name "Takuya Eguchi"
 git config --global user.email "seal2501@gmail.com"
@@ -96,17 +105,18 @@ And I can get raw Docker Hub credential like following to `~/.docker/config.json
 
 ```json
 {
-	"auths": {
-		"https://index.docker.io/v1/": {
-			"auth": "xxxxxxxxxx"
-		}
-	}
+  "auths": {
+    "https://index.docker.io/v1/": {
+      "auth": "xxxxxxxxxx"
+    }
+  }
 }
 ```
 
 cf) https://github.com/docker/compose/issues/6517#issuecomment-471625374
 
 Also I got following warning when login to docker hub
+
 ```
 WARNING! Your password will be stored unencrypted in /Users/takuya/.docker/config.json.
 Configure a credential helper to remove this warning. See
@@ -115,6 +125,5 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 If I have concern this warning, I can use `docker-credential=helpers` .
 https://github.com/docker/docker-credential-helpers/releases
-
 
 Finally (really), I tried to `docker compose build` and it works.
