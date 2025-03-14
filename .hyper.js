@@ -5,11 +5,11 @@
 module.exports = {
   config: {
     hyperVibrance: {
-      vibrancy: 'dark',
+      vibrancy: 'ultra-dark',
     },
     opacity: {
-      focus: 1.0,
-      blur: 0.5,
+      focus: 0.98,
+      blur: 0.4,
     },
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
@@ -38,13 +38,18 @@ module.exports = {
     foregroundColor: '#eee',
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
     // terminal selection color
     selectionColor: 'rgba(248,28,229,0.3)',
     // border color (window, tabs)
-    borderColor: 'rgba(0, 0, 0, 0.5)',
+    borderColor: 'rgba(0, 0, 0, 0.1)',
     // custom CSS to embed in the main window
-    css: '',
+    css: `
+      /* resolve "hyper-statusline" and "hyperline"'s conflict */
+      .jsx-1196914242 {
+        bottom: 28px;
+      }
+    `,
     // custom CSS to embed in the terminal window
     termCSS: '',
     // set custom startup directory (must be an absolute path)
@@ -57,7 +62,7 @@ module.exports = {
     // default: `true` (without backticks and without quotes) on Windows and Linux, ignored on macOS
     showWindowControls: '',
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '0 4px 16px',
+    padding: '0 4px 18px',
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
@@ -147,7 +152,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-vibrance', 'hyper-opacity', 'hyperline'],
+  plugins: ['hyper-vibrance', 'hyper-opacity', 'hyperline', 'hyper-statusline'],
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
