@@ -8,7 +8,7 @@ https://brew.sh/index_ja
 
 ```sh
 # cli
-brew install git gsed nodenv vim jq peco ffmpeg
+brew install git gsed n vim jq peco ffmpeg
 
 # cask
 brew install \
