@@ -53,9 +53,10 @@ vi ~/.vimrc
 
 #### 7. Deploy these files
 
+This script will deploy the necessary configuration files to their appropriate locations.
+
 ```sh
-cp /.* ./
-# TODO: This command occurred `.git` directory copy
+./setup.sh
 ```
 
 #### 8. Install `vim-plug` for vim
