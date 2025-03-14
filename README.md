@@ -51,7 +51,7 @@ mv molokai/colors/molokai.vim ~/.vim/colors/
 vi ~/.vimrc
 ```
 
-#### 7. Deploy
+#### 7. Deploy these files
 
 ```sh
 cp /.* ./
@@ -78,6 +78,15 @@ git config --global color.ui true
 git config --global pull.ff only
 git config --global pull.rebase false
 ```
+
+#### 10. (Optional) Install MacOS default terminal theme
+
+1. Open Terminal.app
+2. Open Preferences
+3. Select `Profiles` tab
+4. Click `Import` button
+5. Select `hyper.terminal` in this repository
+6. Click `Default` button
 
 #### 10. (Optional) Install Docker compose
 
